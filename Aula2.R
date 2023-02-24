@@ -119,4 +119,11 @@ rownames(alunos) <- c("Alana", "Beatriz", "Carla", "Daniela", "Eduardo", "Felipe
 # fem <- alunos[, 3] == 1; fem
 # Retorna todas as colunas que satisfazem a condição
 fem <- alunos[alunos[, 3] == 1, ]; fem
+
+# Operador lógico e &
+fem20 <- alunos[alunos[, 3] == 1 & alunos[, 2] < 20, ]; fem
+
+# Operador lógico ou |
+todos <- alunos[alunos[, 3] == 1 | alunos[, 3] == 0, ]; todos
+
 mas <- alunos[alunos[, 3] == 0, ]; mas
